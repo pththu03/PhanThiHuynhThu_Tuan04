@@ -101,7 +101,6 @@
 
 .subtitle .straight {
     color:  #DEE1E6FF;
-    border-width: 1px;
 }
 
 .time {
@@ -138,6 +137,19 @@
     color: #fff;
 }
 
+.box_img .name .dot_img {
+    color: #1DD75BFF;
+}
+
+/* phan thuoc tinh cua rieng hinh anh to nhat */
+.pic_main {
+    /* background-color: gray; */
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .pic_main .box_img {
     width: 830px;
     height: 470px;
@@ -147,18 +159,6 @@
     align-items: flex-end; */
     position: relative;
     border-radius: 4px;
-}
-
-.box_img .name .dot_img {
-    color: #1DD75BFF;
-}
-
-/* phan thuoc tinh cua rieng hinh anh to nhat */
-.pic_main {
-    /* background-color: gray; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .box_img .imgbig {
@@ -201,9 +201,58 @@
     font-size: 14px;
     line-height: 22px;
 }
+/* phan hinh anh nho o giua man hinh */
+.picter_member {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 40px 830px 40px;
+}
+.pic_members {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+}
 
-.pic_members {}
+.box_img {
+   width: 261px; 
+   height: 160px;
+   position: relative;
+}
 
+.box_img .img_member {
+    border-radius: 4px;
+}
+
+.box_img .img_mic_member {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+}
+
+.box_img .name {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 101px;
+    height: 26px;
+}
+
+.name .dot_img {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    font-size: 8px;
+}
+
+.name .text_img {
+    position: absolute;
+    top: 4px;
+    left: 24px;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+/* thanh chuc nang nam duoi cung trong phan center */
 .acction_center {}
 
 .right {
