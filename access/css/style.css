@@ -229,32 +229,60 @@
     right: 8px;
 }
 
-.box_img .name {
+.box_img .name_member {
     position: absolute;
     top: 6px;
     left: 8px;
     width: 101px;
     height: 26px;
+    border-radius: 4px;
+    background-color:  #171A1F80;
 }
 
-.name .dot_img {
+.name_member .dot_img {
+    color: #1DD75BFF;
     position: absolute;
     top: 9px;
     left: 8px;
     font-size: 8px;
 }
 
-.name .text_img {
+.name_member .text_img {
     position: absolute;
     top: 4px;
     left: 24px;
     font-size: 11px;
     line-height: 18px;
+    color: #fff;
 }
 
 /* thanh chuc nang nam duoi cung trong phan center */
-.acction_center {}
+.action_center {
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 212px 486px 212px;
+}
 
+.action_center .box_action {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_action .img_action {
+    height: 44px;
+}
+
+.box_action .button_end {
+    width: 126px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #F22128FF;
+    border: none;
+    border-radius: 4px;
+}
+
+/* phan ben phai cua man hinh */
 .right {
     grid-column: 3/4;
 }
