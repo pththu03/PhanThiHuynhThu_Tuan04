@@ -77,24 +77,41 @@
 }
 
 .metting .subtitle .internal {
-    background-color: pink;
+    background-color: #E34D73;
     border-radius: 25px;
+    color: #fff;
 }
 
 .metting .subtitle p {
     display: inline-block;
     font-size: 16px;
+    color: #323842;
+}
+
+.subtitle .straight{
+    color: #E7E9EC;
 }
 
 .time {
-    padding: 5px 10px;
-    color: red;
-    border: 1px solid red;
+    width: 70px;
+    padding: 10px 10px;
+    color: #f22128;
+    border: 1px solid #f3383e;
     border-radius: 20px;
 }
 
+.time p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.time p .dot {
+    font-size: 10px;
+}
+
 .pic_main {
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 .pic_members {}
