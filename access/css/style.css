@@ -104,7 +104,7 @@
     color:  #DEE1E6FF;
 }
 
-.time {
+.content_heading .time {
     position: absolute;
     top: 32px;
     right: 40px;
@@ -290,7 +290,7 @@
 .right {
     grid-column: 3/4;
     box-shadow: 0px 0px 1px #EAECEFFF, 0px 0px 2px #EAECEFFF;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 323px 576px;
@@ -376,13 +376,14 @@
 }
 
 .member .avt_name {
-    width: 171px;
+    width: 181px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .avt_name .text {
+    width: max-content;
     font-size: 14px;
     line-height: 22px;
     padding-left: 10px;
@@ -403,5 +404,164 @@
 
 /* phan khung chat */
 .right .chat {
+    width: 450px;
+    height: 576px;
+    position: relative;
+    display: block;
+}
 
+.chat > .text {
+    position: absolute;
+    top: 33px;
+    left: 32px;
+    font-size: 24px;
+    color: #171A1FFF;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: bold;
+}
+
+/* thuoc tinh chung */
+.chat .member_chat .avt {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 0px;
+}
+
+.member_chat p {
+    display: inline-block;
+}
+
+.member_chat .text_name {
+    width: max-content;
+    position: absolute;
+    left: 52px;
+    font-size: 14px; 
+    font-weight: 900;
+    line-height: 36px; 
+    color: #323842FF;
+}
+
+.member_chat .time {
+    width: max-content;
+    font-size: 12px; 
+    line-height: 36px; 
+    color: #9095A0FF;
+}
+
+.member_chat .mess {
+    width: 334px; 
+    height: 68px; 
+    position: absolute;
+    top: 36px;
+    left: 52px;
+    background-color: #F8F9FAFF;
+    border-radius: 4px;
+}
+
+.mess .text {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    font-size: 14px;
+    line-height: 22px;
+    color:  #171A1FFF;
+}
+
+/* thuoc tinh rieng */
+.chat .chu_chat {
+    position: absolute;
+    top: 101px;
+    left: 32px;
+
+}
+
+.chu_chat .time {
+    position: absolute;
+    left: 144px;
+}
+
+.chat .nievies_chat {
+    position: absolute;
+    top: 229px;
+    left: 32px;
+}
+
+.nievies_chat .time {
+    position: absolute;
+    left: 146px;
+}
+
+.chat .benjamin_chat {
+    position: absolute;
+    top: 357px;
+    left: 32px;
+}
+
+.benjamin_chat .time {
+    position: absolute;
+    left: 180px;
+}
+
+.benjamin_chat .mess_benjamin {
+    width: 99px; 
+    height: 52px; 
+    background: #FDF2F4FF;
+
+}
+
+.chat .scott_chat {
+    position: absolute;
+    top: 469px;
+    left: 32px;
+}
+
+/* khung nhap */
+.scott_chat .form_input {
+    width: 386px;
+    position: absolute;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_input .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F4F6;
+    border-radius: 4px;
+}
+
+.input .text_input {
+    width: 270px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #BCC1CA;
+    background-color: #F3F4F6;
+}
+
+.input .icon_chat {
+    padding: 10px;
+}
+
+.input .typing {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 52px;
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #6E7787FF;
+    background-color: #F8F9FA;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input:hover .typing {
+    display: inline-block;
 }
